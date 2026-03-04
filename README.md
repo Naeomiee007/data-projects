@@ -5,7 +5,7 @@ financial performance, and content analytics.
 
 ---
 
-## 🎬 Netflix Content Strategy Analysis
+## Netflix Content Strategy Analysis
 Analyzed 8,000+ Netflix titles to identify how content strategy 
 has evolved across type, geography, ratings, and genre.
 
@@ -22,7 +22,7 @@ has evolved across type, geography, ratings, and genre.
 
 ---
 
-## 📊 Top 12 German Companies — 5-Year Financial Performance
+## Top 12 German Companies — 5-Year Financial Performance
 Built a composite performance scoring model to rank the top 12 
 German companies by overall financial health over 5 years.
 
