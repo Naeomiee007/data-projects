@@ -1,15 +1,15 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import IsolationForest
-import matplotlib.pyplot as plt
+from pathlib import Path
 
-st.set_page_config(page_title="Fraud Detection", layout="wide")
-
+st.set_page_config(page_title="Fraud Detection Dashboard", layout="wide")
 st.title("Fraud Detection")
 
-df = pd.read_csv("credit_card_fraud.csv")
+csv_path = Path(__file__).parent / "credit_card_fraud.csv"
+st.write("CSV path being used:", csv_path)
+st.write("Does file exist?", csv_path.exists())
+
+df = pd.read_csv(csv_path)
 
 st.subheader("Dataset Preview")
 st.dataframe(df.head())
