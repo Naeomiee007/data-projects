@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Fraud Detection Dashboard", layout="wide")
 
-st.title("Fraud Detection Dashboard")
+st.title("Fraud Detection")
 
 df = pd.read_csv("data/credit_card_fraud.csv")
 
