@@ -9,7 +9,7 @@ st.set_page_config(page_title="Fraud Detection Dashboard", layout="wide")
 
 st.title("Fraud Detection Dashboard")
 
-df = pd.read_csv(os.path.join("data", "credit_card_fraud.csv"))
+df = pd.read_csv("credit_card_fraud.csv")
 
 st.subheader("Dataset Preview")
 st.dataframe(df.head())
