@@ -55,5 +55,4 @@ Transactions that significantly differ from normal behavior are flagged as poten
 * Integrate real-time transaction data
 
 ## Author
-
 Naomi Adeniji
