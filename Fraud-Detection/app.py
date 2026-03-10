@@ -10,11 +10,7 @@ st.set_page_config(page_title="Fraud Detection Dashboard", layout="wide")
 st.title("Fraud Detection")
 
 csv_path = Path(__file__).parent / "credit_card_fraud.csv"
-st.write("CSV path being used:", csv_path)
-st.write("Does file exist?", csv_path.exists())
-
 df = pd.read_csv(csv_path)
-
 st.subheader("Dataset Preview")
 st.dataframe(df.head())
 
