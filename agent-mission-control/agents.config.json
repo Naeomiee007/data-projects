@@ -10,6 +10,19 @@
       "settings": {
         "permissionMode": "acceptEdits"
       }
+    },
+    {
+      "id": "distressedprops",
+      "adapter": "claude-code",
+      "name": "DistressedProps Integrator",
+      "icon": "\u25c8",
+      "color": "#5eb8ff",
+      "workspace": "./workspaces/distressedprops",
+      "seed": "./agent-seeds/distressedprops",
+      "settings": {
+        "permissionMode": "acceptEdits",
+        "allowedTools": "WebFetch WebSearch"
+      }
     }
   ]
 }

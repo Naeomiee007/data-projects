@@ -70,6 +70,8 @@ stop()                      // interrupt
 
 Register it with `"adapter": "my-agent"` and restart. The template is a working demo agent; try it with `{ "id": "echo", "adapter": "_template", "name": "Echo Bot" }`.
 
+**Give an agent a role and background knowledge.** Add `"seed": "./agent-seeds/<name>"` to its config entry. The files in that folder are copied into the agent's workspace the first time it starts (existing files are never overwritten). For Claude Code agents, a `CLAUDE.md` in the workspace is read on every run, so it's the place for the agent's job description and reference documents (`@HANDOFF.md` pulls another file in). The included `distressedprops` agent is an example: it carries the DistressedProps CRM/Make/ActiveCampaign handoff and works through it with you.
+
 Set `"enabled": false` on an entry to hide that agent without deleting it.
 
 ## Project layout

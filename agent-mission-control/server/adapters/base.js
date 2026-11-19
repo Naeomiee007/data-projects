@@ -73,6 +73,11 @@ export class BaseAgent extends EventEmitter {
 
     this.#load();
     fssync.mkdirSync(this.workspaceRoot, { recursive: true });
+    // Optional starter files (instructions, reference docs). Copied once; never overwrites existing files.
+    if (config.seed) {
+      try { fssync.cpSync(path.resolve(ctx.rootDir, config.seed), this.workspaceRoot, { recursive: true, force: false, errorOnExist: false }); }
+      catch (e) { console.error(`[${this.id}] could not copy seed files: ${e.message}`); }
+    }
   }
 
   // ───────────────────────── adapter hooks (override these) ─────────────────────────
