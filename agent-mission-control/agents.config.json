@@ -1,0 +1,15 @@
+{
+  "host": "127.0.0.1",
+  "port": 4317,
+  "agents": [
+    {
+      "id": "claude-code",
+      "adapter": "claude-code",
+      "name": "Claude Code",
+      "workspace": "./workspaces/claude-code",
+      "settings": {
+        "permissionMode": "acceptEdits"
+      }
+    }
+  ]
+}

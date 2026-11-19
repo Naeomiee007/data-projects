@@ -1,0 +1,12 @@
+{
+  "name": "agent-mission-control",
+  "version": "1.0.0",
+  "description": "A local operating dashboard for managing AI agents (starting with Claude Code).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "engines": { "node": ">=18" }
+}
